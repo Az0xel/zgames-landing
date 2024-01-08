@@ -1,3 +1,4 @@
+/* Fullscreen YouTube Video Container */
 .youtube-container {
     position: fixed;
     top: 0;
@@ -6,8 +7,32 @@
     height: 100%;
     overflow: hidden;
 }
+
 .youtube-container iframe {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* Clickable Caption Link */
+.caption-link {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed for spacing from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Adjust as needed */
+    z-index: 20; /* Ensure it's above the video */
+}
+
+/* SEO Keywords (Hidden) */
+.seo-text {
+    position: absolute;
+    color: black;
+    background-color: black;
+    overflow: hidden;
+    font-size: 0; /* Makes text 'invisible' */
+    width: 1px;
+    height: 1px;
 }
